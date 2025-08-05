@@ -40,21 +40,20 @@ body {
 
 main {
   width: 93%;
-
   max-width: 550px;
-  margin: auto;
+  margin: 100px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: calc(10px + 0.5vw);
-  overflow: hidden;
   background-color: var(--White);
 }
 
-picture {
+.product-image {
   width: 100%;
-  height: 100%;
+  border-radius: calc(10px + 0.5vw) calc(10px + 0.5vw) 0 0;
+  overflow: hidden;
 }
 
 picture img {
@@ -63,9 +62,9 @@ picture img {
 }
 
 section {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 2em;
   padding: 2em;
 }
@@ -98,6 +97,7 @@ span.category {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1em;
 }
 
@@ -117,7 +117,8 @@ button {
   gap: 0.5em;
   background-color: var(--Green-500);
   border: none;
-  padding: 1.2em 0;
+  padding: 1.2em 2em;
+  border-radius: calc(0.2em + 0.5vw);
 }
 
 button span {
@@ -146,14 +147,25 @@ button:hover {
 @media (min-width: 675px) {
   main {
     flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
   }
 
-  picture {
-    width: 50%;
+  .product-image {
+    width: 47%;
+    height: 100%;
+    border-radius: calc(10px + 0.5vw) 0 0 calc(10px + 0.5vw);
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   section {
-    height: 100%;
-    width: 50%;
+    width: 47%;
+    justify-content: center;
+    padding-left: 0;
   }
 }
