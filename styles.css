@@ -41,7 +41,7 @@ body {
 main {
   inline-size: 93%;
   max-inline-size: 550px;
-  margin: 100px auto;
+  margin: 6em auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,7 +145,7 @@ button:hover {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 675px) {
+@media (min-width: 43em) {
   main {
     flex-direction: row;
 
