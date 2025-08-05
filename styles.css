@@ -77,7 +77,8 @@ h1,
 }
 
 p,
-span {
+span,
+.attribution {
   font-family: var(--Montserrat);
   font-weight: var(--Montserrat-medium);
   color: var(--Grey);
@@ -138,11 +139,12 @@ button:hover {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.8rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--Green-500);
+  text-decoration: none;
 }
 
 @media (min-width: 43em) {
